@@ -1,0 +1,1100 @@
+.n-wrapper {
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem 5rem;
+  z-index: 999999;
+}
+
+.n-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1500;
+  /* background: red; */
+  background: linear-gradient(#ffffff 0%, #ffffff 60%, #ffffff 60%, #ffffff00 100%);
+  border: none;
+}
+
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+  height: 3rem;
+}
+
+.n-left img {
+  height: 2.5rem;
+
+}
+
+
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+
+.n-list>ul {
+  display: flex;
+  gap: 3rem;
+  margin-right: 4rem;
+
+}
+
+.n-list>ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-list>ul>li>a {
+  font: normal normal 500 25px/41px 'Ubuntu', sans-serif;
+  color: var(--black);
+
+}
+
+.n-button {
+  flex: 2;
+}
+
+
+
+
+/* --------------------------------------- Into ----------------------------------*/
+
+
+.Intro {
+  display: flex;
+  height: 83vh;
+  width: 100%;
+  padding: 0.5rem 10rem;
+  margin-top: 5rem;
+}
+
+/*---------- left side styling --------------*/
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.i-name> :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 1rem 0rem;
+  font-family: "KoorkinW04-Bold";
+
+
+}
+
+
+.i-name> :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  -webkit-text-stroke: 1px var(--orange);
+  letter-spacing: 2.5px;
+  font: normal 500 25px/75px 'Ubuntu', sans-serif;
+  font-size: 3rem;
+
+
+}
+
+
+.i-button {
+  width: 10.5rem;
+}
+
+
+/*---------- right side styling ------------*/
+.i-right {
+
+  flex: 1;
+  position: relative;
+}
+
+.i-right>* {
+  position: absolute;
+  z-index: 1;
+}
+
+.i-right> :nth-child(1) {
+  left: 3%;
+  top: -10%;
+}
+
+.i-right> :nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  top: 1rem;
+  left: 25rem;
+  padding: 1rem 2rem;
+  height: 4.5rem;
+  box-shadow: var(--boxShadow);
+  background: white;
+  border-radius: 17px;
+  z-index: -15;
+}
+
+.i-right> :nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  top: 49%;
+  left: -5rem;
+  padding: 1rem 2rem;
+  height: 4.5rem;
+  box-shadow: var(--boxShadow);
+  background: white;
+  border-radius: 17px;
+  z-index: 15;
+}
+
+
+.i-right> :nth-child(n)>span {
+  font: normal 500 25px/29px 'Ubuntu', sans-serif;
+}
+
+.i-right> :nth-child(n)>img {
+  transform: scale(0.8);
+}
+
+
+
+/* --------------------------------------- Service ----------------------------------*/
+
+
+
+.Service {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  padding: 0.5rem 10rem;
+  margin-top: 3rem;
+}
+
+/*---------- left side styling --------------*/
+.s-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.s-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.s-name> :nth-child(1) {
+  margin: 1rem 0rem;
+
+}
+
+
+.s-button {
+  width: 13.5rem;
+}
+
+
+
+
+/*---------- right side styling ------------*/
+.s-right {
+
+  flex: 1;
+  position: relative;
+
+}
+
+.s-right>* {
+  position: absolute;
+  z-index: 1;
+
+}
+
+.s-right>.s-card {
+  /* width: 10rem; */
+  /* height: 13rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  background: #FFFFFF30;
+  border: 10px solid var(--orangeCard);
+  border-radius: 20px;
+  padding: 26px 15px;
+}
+
+.s-right .s-card img {
+  transform: scale(0.85);
+  margin-bottom: -1rem;
+}
+
+.s-right>.s-card> :nth-child(2) {
+  font: normal 500 28px/32px 'Ubuntu', sans-serif;
+  color: var(--darkGray);
+
+}
+
+.s-right>.s-card> :nth-child(3) {
+  font: normal 400 22px/26px 'Ubuntu', sans-serif;
+  color: var(--gray);
+  display: flex;
+  width: 14rem;
+}
+
+.s-right> :nth-child(1) {
+  top: 10%;
+  left: 45%;
+}
+
+.s-right> :nth-child(2) {
+  top: 46%;
+  left: -15%;
+}
+
+.s-right> :nth-child(3) {
+  top: 52%;
+  left: 35%;
+}
+
+
+
+.c-button {
+  background: rgba(255, 255, 255, 0.128);
+  box-shadow: 0px 19px 60px #0000001b;
+  font: normal normal 500 18px/25px 'Ubuntu', sans-serif;
+  border-radius: 7px;
+  padding: 7px 15px;
+  border: none;
+  color: #5290FD;
+
+
+}
+
+
+
+
+/* --------------------------------------- Quality Skills ----------------------------------*/
+
+
+
+.Quality {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 10rem;
+  height: 85vh;
+  margin-top: 3rem;
+
+}
+
+/*---------- Top side styling --------------*/
+.q-top {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.q-name {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+/*---------- Bottom side styling ------------*/
+
+
+.q-bottom {
+
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem 8rem;
+}
+
+.q-bottom>* {
+  position: absolute;
+  z-index: 1;
+
+}
+
+
+.q-pie {
+  --p1: 75;
+  --p2: 60;
+  --p3: 80;
+  --p4: 70;
+  /* the percentage */
+  --b: 20px;
+  /* the thickness */
+  --w: 220px;
+  /* the size*/
+
+  width: var(--w);
+  height: var(--w);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  z-index: 100;
+  background: white;
+
+
+}
+
+.q-pie:before,
+.q-pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.q-pie:before {
+  inset: 0;
+  box-shadow: inset 0px 0px 15px #00000020;
+
+}
+
+.q-pie:after {
+  inset: calc(50% - var(--b)/2);
+  background: #ffc05c;
+}
+
+
+/* for 1st chart 70% -->  p1: 70  */
+
+.q-bottom :nth-child(1):before {
+
+  background:
+    radial-gradient(farthest-side, #87e6fb 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(from 0deg, #87e6fb 1%, #ffc05c calc(var(--p1)*1%), #D6D6D6 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+}
+
+.q-bottom :nth-child(1):after {
+
+  transform: rotate(calc(var(--p1)*3.6deg - 90deg)) translate(calc(var(--w)/2 - 50%));
+
+}
+
+/* for 2nd chart 60% -->  p2: 20  */
+
+
+
+.q-bottom :nth-child(2):before {
+
+  background:
+    radial-gradient(farthest-side, #87e6fb 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(from 0deg, #87e6fb 1%, #ffc05c calc(var(--p2)*1%), #D6D6D6 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+}
+
+.q-bottom :nth-child(2):after {
+
+  transform: rotate(calc(var(--p2)*3.6deg - 90deg)) translate(calc(var(--w)/2 - 50%));
+
+}
+
+/* for 3rd chart 80% --> p3: 80  */
+
+
+.q-bottom :nth-child(3):before {
+
+  background:
+    radial-gradient(farthest-side, #87e6fb 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(from 0deg, #87e6fb 1%, #ffc05c calc(var(--p3)*1%), #D6D6D6 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+}
+
+.q-bottom :nth-child(3):after {
+
+  transform: rotate(calc(var(--p3)*3.6deg - 90deg)) translate(calc(var(--w)/2 - 50%));
+
+}
+
+/* for 4th chart 70% --> p4: 70  */
+
+
+.q-bottom :nth-child(4):before {
+  background:
+    radial-gradient(farthest-side, #87e6fb 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(from 0deg, #87e6fb 1%, #ffc05c calc(var(--p4)*1%), #D6D6D6 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+}
+
+.q-bottom :nth-child(4):after {
+
+  transform: rotate(calc(var(--p4)*3.6deg - 90deg)) translate(calc(var(--w)/2 - 50%));
+
+}
+
+
+.q-bottom>.q-pie> :nth-child(1) {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+
+  font: normal 500 23px/30px 'Ubuntu', sans-serif;
+  color: var(--blue);
+  letter-spacing: 0.75px;
+
+}
+
+.q-bottom>.q-pie> :nth-child(2) {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  font: normal 600 27px/30px 'Ubuntu', sans-serif;
+  color: var(--darkGray);
+  letter-spacing: 0.75px;
+
+}
+
+
+
+
+/* --------------------------- Recent Projects GD ---------------------------------- */
+
+
+.GD {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 10rem;
+  /* height: 100vh; */
+}
+
+/*---------- Top side styling --------------*/
+.gd-top {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.gd-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+/*---------- Bottom side styling ------------*/
+
+
+.gd-bottom {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+
+.gd-project {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+.gd-project-lft {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+.gd-project-rgt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+
+.gd-bottom img {
+
+  border: 7px solid #FFFFFF;
+  box-shadow: 7px 7px 15px #0000004D;
+  border-radius: 15px;
+}
+
+
+
+
+/* --------------------------- Latest UI/UX project ---------------------------------- */
+
+
+.UI {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  padding: 0.5rem 10rem;
+  margin-top: 5rem;
+}
+
+/*---------- Top side styling --------------*/
+.ui-top {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.ui-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+
+/*---------- Bottom side styling ------------*/
+
+
+.ui-bottom {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 8rem;
+}
+
+
+.ui-project {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+.ui-project-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.ui-project-top .ui-lft {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.ui-project-top .ui-rgt {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+
+.ui-project-btm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.ui-bottom img {
+
+  border: 7px solid #FFFFFF;
+  box-shadow: 7px 7px 15px #0000004D;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------- Works for You ----------------------------------*/
+
+
+
+.Work {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  /* height: 85vh; */
+  padding: 0.5rem 10rem;
+  margin-top: 6rem;
+}
+
+/*---------- Top side styling --------------*/
+.w-top {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.w-name {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+/*---------- Bottom side styling ------------*/
+
+
+.w-bottom {
+
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem 8rem;
+}
+
+/* .w-bottom>* {
+  position: absolute;
+  z-index: 1;
+
+} */
+
+.w-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.w-pie {
+  --p: 100;
+  /* the percentage */
+  --b: 20px;
+  /* the thickness */
+  --w: 220px;
+  /* the size*/
+
+  width: var(--w);
+  height: var(--w);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  z-index: 100;
+  background: white;
+
+
+}
+
+.w-pie:before,
+.w-pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.w-pie:before {
+  inset: 0;
+  box-shadow: inset 0px 0px 15px #00000020;
+  inset: 0;
+  box-shadow: inset 0px 0px 15px #00000020;
+  background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+}
+
+.w-pie>span {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  font: normal 500 60px/70px 'Ubuntu', sans-serif;
+  color: var(--darkGray);
+  letter-spacing: 0.75px;
+}
+
+
+.w-bottom>.w-card :nth-child(2) {
+  display: flex;
+  width: 230px;
+  justify-content: center;
+  text-align: center;
+  font: normal 600 28px/35px "Gumela";
+  letter-spacing: 1.75px;
+  color: var(--darkGray);
+  letter-spacing: 0.75px;
+  margin: 0.4rem 0;
+
+}
+
+.w-bottom>.w-card :nth-child(3) {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  font: normal 600 25px/30px "Gumela";
+  letter-spacing: 1.75px;
+  color: var(--orange);
+  letter-spacing: 0.75px;
+
+}
+
+
+
+
+/* --------------------------- Qualification and Experience ---------------------------------- */
+
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  padding: 0.5rem 10rem;
+  margin-top: 5rem;
+}
+
+/*---------- Top side styling --------------*/
+.exp-top {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.exp-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+
+
+/*---------- Bottom side styling ------------*/
+
+
+.exp-bottom {
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem;
+}
+
+.exp-bottom .exp-lft,
+.exp-bottom .exp-rgt {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 2rem;
+}
+
+.exp_title {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.exp_title img {
+  transform: scale(1.2);
+}
+
+.exp_title span {
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px var(--orange);
+
+  letter-spacing: 1.75px;
+  color: var(--orange);
+
+}
+
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.exp-info>div {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+
+}
+
+.exp-info-title {
+  font: normal normal 500 25px/32px 'Ubuntu', sans-serif;
+
+}
+
+.exp-info-detail {
+  font: normal normal 400 20px/28px 'Ubuntu', sans-serif;
+  color: var(--gray);
+}
+
+
+
+
+
+/* --------------------------------------- Contact Us ----------------------------------*/
+
+
+.Contact {
+  display: flex;
+  height: 90vh;
+  padding: 0.5rem 10rem;
+  margin: 0 8rem;
+  
+}
+
+/*---------- left side styling --------------*/
+.con-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: top;
+  margin-top: 10rem;
+}
+
+.con-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.con-name> :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 1rem 0rem;
+  letter-spacing: 2.5px;
+
+
+}
+
+
+.con-name> :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  font-size: 3rem;
+
+
+}
+
+
+
+/*---------- right side styling ------------*/
+.con-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.con-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-right form div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.con-right input, textarea, input:focus{
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  font: normal 500 22px/30px 'Ubuntu', sans-serif;
+  border: 4px solid var(--orange);
+  width: 500px;
+  outline: none;
+  resize: none;
+}
+.con-right input::placeholder, textarea::placeholder
+ {
+  color: var(--gray);
+}
+input:focus::placeholder, textarea:focus::placeholder{
+color: var(--darkGray);
+}
+
+.con-button {
+  width: 10.5rem;
+}
+
+
+
+/* --------------------------------------- Footer ----------------------------------*/
+
+.Footer{
+  display: flex;
+  height: 80vh;
+  position: relative;
+  
+  background: url('/assets/SVG/footer.svg') no-repeat;
+  padding: 0;
+  background-position: center;
+  padding: 0.5rem 10rem;
+  background-size: cover;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+}
+.ftr{
+  flex: 10;
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content:end;
+  align-items:center;
+  flex-direction: column;
+}
+.ftr >a{
+  font: normal 600 35px/42px 'Ubuntu', sans-serif;
+  letter-spacing: 2.5px;
+  color: white;
+}
+.ftr .line{
+  background-color: white;
+  width: 10rem;
+}
+
+.ftr-socialmedia{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.Copyright{
+  border-top: 2px solid var(--black);
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Copyright > span{
+  color: var(--black);
+  margin: 0.5rem 0 0.25rem 0;
+  font: normal 500 18px/25px 'Ubuntu', sans-serif;
+
+}
